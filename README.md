@@ -66,3 +66,10 @@ param : Les paramètres néscéssaires à la requête.
 
 manager : Le manager à utilisé pour la requête.
 
+# Réponse de l'API :
+
+L'API va envoyer une réponses à l'application sous la forme d'une chaine de charactère formatter en JSON.
+
+![image](https://user-images.githubusercontent.com/68700452/233185873-3ef082da-b631-4e97-a94d-7f8a9fc13ec6.png)
+
+
