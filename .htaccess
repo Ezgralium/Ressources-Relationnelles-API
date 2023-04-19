@@ -1,0 +1,13 @@
+RewriteEngine On
+
+FallbackResource /api/v1/index.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^/?(Ressource)/([0-9]+)$ /api/v1/index.php/$1?id=$2 [L]
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+#FallbackResource /_index.php

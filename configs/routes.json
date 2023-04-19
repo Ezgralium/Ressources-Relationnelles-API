@@ -1,0 +1,138 @@
+[
+	{
+		"path": "/Login",
+		"action": "Authenticate",
+		"controller": "User",
+		"method": "POST",
+		"param": [
+			"login",
+			"password"
+		],
+		"manager": [
+			"User"
+		]
+	},
+	{
+		"path": "/Login_2",
+		"action": "Authenticate_2",
+		"controller": "User",
+		"method": "POST",
+		"param": [
+			"login"
+		],
+		"manager": [
+			"User"
+		]
+	},
+	{
+		"path": "/User",
+		"action": "getInfos",
+		"controller": "User",
+		"method": "GET",
+		"param": [
+			"mail"
+		],
+		"manager": [
+			"User"
+		]
+	},
+	{
+		"path": "/Register",
+		"action": "Register",
+		"controller": "User",
+		"method": "POST",
+		"param": [
+			"mail",
+			"alias",
+			"lastName",
+			"firstName",
+			"password"
+		],
+		"manager": [
+			"User"
+		]
+	},
+	{
+		"path": "/Ressource",
+		"action": "getRessource",
+		"controller": "Ressource",
+		"method": "GET",
+		"param": [
+			"id"
+		],
+		"manager": [
+			"Ressource"
+		]
+	},
+	{
+		"path": "/getRessourcesHeaders",
+		"action": "getRessourcesHeaders",
+		"controller": "Ressource",
+		"method": "GET",
+		"manager": [
+			"Ressource"
+		]
+	},
+	{
+		"path": "/createRessource",
+		"action": "createRessource",
+		"controller": "Ressource",
+		"method": "POST",
+		"param": [
+			"title",
+			"type",
+			"content",
+			"imagePath",
+			"creator"
+		],
+		"manager": [
+			"Ressource"
+		]
+	},
+	{
+		"path": "/searchRessource",
+		"action": "searchRessource",
+		"controller": "Ressource",
+		"method": "GET",
+		"param": [
+			"search"
+		],
+		"manager": [
+			"Ressource"
+		]
+	},
+	{
+		"path": "/getRessourceComments",
+		"action": "getRessourceComments",
+		"controller": "Comment",
+		"method": "GET",
+		"param": [
+			"ressourceId"
+		],
+		"manager": [
+			"Comment"
+		]
+	},
+	{
+		"path": "/createComment",
+		"action": "createComment",
+		"controller": "Comment",
+		"method": "POST",
+		"param": [
+			"ressourceId",
+			"creator",
+			"content"
+		],
+		"manager": [
+			"Comment"
+		]
+	},
+	{
+		"path": "/Error",
+		"controller": "Error",
+		"action": "Show",
+		"method": "GET",
+		"param": [],
+		"manager": []
+	}
+]

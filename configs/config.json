@@ -1,0 +1,9 @@
+{
+	"database": {
+		"dbHost": "localhost",
+		"dbName": "RESSOURCES_CUBE",
+		"dbUser": "admin_ressource",
+		"dbPwd": "EAECA39DAB826F6D3B163E8D4EB8CD6A"
+	},
+	"basepath": "/api/v1"
+}

@@ -1,0 +1,1 @@
+<p><span style="background-color: rgb(230, 0, 0); color: rgb(255, 255, 255);">Ceci est un test<span class="ql-cursor">﻿</span></span></p>

@@ -1,0 +1,9 @@
+{
+	"folders": [
+		"classes",
+		"configs",
+		"exceptions",
+		"managers",
+		"controllers"
+	]
+}
