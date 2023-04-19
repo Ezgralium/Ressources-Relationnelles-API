@@ -21,12 +21,21 @@ Celle-ci tourne sur un serveur web Apache 2.4 et sous PHP 7.4
 
 
 assets : Les différentes ressources de l'application (Images...)
+
 classes : Les différentes classes utilisées par l'API.
+
 configs : Les différents fichiers de config (routes...).
+
 controllers : Les controlleurs de chaque classes (Utilisateurs, Ressources...).
+
 data : Emplacement de stockage des ressources.
+
 exceptions : Erreurs personalisées de l'API.
+
 managers : Connecteurs entre la base de donnée et l'API.
+
 .htaccess : Fichier de configuration pour le serveur web.
+
 autoload.php : Script permettant de charger tous les fichiers nécessaire pour le bon fonctionnement de l'API.
+
 index.php : 'Endpoint' de l'application, là ou les requêtes vous arrivées pour être traitées.
