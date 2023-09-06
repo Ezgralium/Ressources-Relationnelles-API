@@ -2,8 +2,9 @@
 //TODO sur BDD ressource : ImgPath & cotenu = Path
 	class RessourceController extends BaseController
 	{
-		public function getRessource($id){
-			$ressource = $this->RessourceManager->getById($id);
+		public function getRessource($ressourceId, $userId){
+			$this->RessourceManager->setViews($ressourceId, $userId);
+			$ressource = $this->RessourceManager->getById($ressourceId);
 			$ressource->contenu = file_get_contents($ressource->imgPath."content.txt");
 			$ressource->imgPath = file_get_contents($ressource->imgPath."header.txt");
 			echo json_encode($ressource);
