@@ -33,6 +33,19 @@
 			"mail"
 		],
 		"manager": [
+			"User",
+			"Likes"
+		]
+	},
+	{
+		"path": "/User/getProfilePicture",
+		"action": "getProfilePicture",
+		"controller": "User",
+		"method": "GET",
+		"param": [
+			"path"
+		],
+		"manager": [
 			"User"
 		]
 	},
@@ -53,12 +66,27 @@
 		]
 	},
 	{
+		"path": "/setLike",
+		"action": "setLike",
+		"controller": "Likes",
+		"method": "POST",
+		"param": [
+			"ressourceId",
+			"userId",
+			"liked"
+		],
+		"manager": [
+			"Likes"
+		]
+	},
+	{
 		"path": "/Ressource",
 		"action": "getRessource",
 		"controller": "Ressource",
 		"method": "GET",
 		"param": [
-			"id"
+			"ressourceId",
+			"userId"
 		],
 		"manager": [
 			"Ressource"
@@ -134,5 +162,18 @@
 		"method": "GET",
 		"param": [],
 		"manager": []
+	},
+	{
+		"path": "/Confirmation",
+		"controller": "User",
+		"action": "ConfirmAccount",
+		"method": "GET",
+		"param": [
+			"mail",
+			"code"
+		],
+		"manager": [
+			"User"
+		]
 	}
 ]
