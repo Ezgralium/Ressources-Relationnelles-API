@@ -97,8 +97,10 @@
 
 		public function ConfirmAccount($mail,$code){
 			$result = $this->UserManager->confirmAccount($mail,$code);
-			
+		}
 
+		public function InviteUser($aliasSender,$aliasReceiver){
+			$result = $this->UserManager->InviteUser($aliasSender,$aliasReceiver);
 		}
 
 	}

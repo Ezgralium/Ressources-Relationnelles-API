@@ -175,5 +175,32 @@
 		"manager": [
 			"User"
 		]
+	},
+	{
+		"path": "/InviteUser",
+		"controller": "User",
+		"action": "LinkUser",
+		"method": "POST",
+		"param": [
+			"aliasSender",
+			"aliasReceiver"
+		],
+		"manager": [
+			"User"
+		]
+	},
+	{
+		"path": "/SendSupportMail",
+		"controller": "Support",
+		"action": "SendMail",
+		"method": "POST",
+		"param": [
+			"name",
+			"surname",
+			"phoneNumber",
+			"email",
+			"reason"
+		],
+		"manager": []
 	}
 ]
